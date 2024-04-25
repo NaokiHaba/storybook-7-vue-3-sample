@@ -17,27 +17,35 @@ const meta: Meta<typeof MyButton> = {
         setup() {
             return {args}
         },
-        // args: propsを定義し、Storybookの画面上で動的に変更できるようにする機能
         template: '<MyButton v-bind="args" />'
-    })
+    }),
+    // args: propsを定義し、Storybookの画面上で動的に変更できるようにする機能
+    args: {
+        label: "ボタン",
+        variant: "primary",
+        size: "medium"
+    },
+    // argTypes: propsの型やデフォルト値を定義
+    argTypes: {
+        variant: {
+            // Storybookの UI 上でこの引数をどのように制御するか
+            control: {
+                type: "inline-radio",
+            },
+            // この引数で取り得る値の配列を指定
+            options: ["primary", "secondary",]
+        },
+        size: {
+            control: {
+                type: "select",
+            },
+            options: ["small", "medium", "large"]
+        }
+
+    },
+
 }
 
-export const Default: Story = {
-    args: {
-        label: "ボタン"
-    }
-}
-
-export const Login: Story = {
-    args: {
-        label: "ログイン"
-    }
-}
-
-export const SignUp: Story = {
-    args: {
-        label: "会員登録"
-    }
-}
+export const Default: Story = {};
 
 export default meta
