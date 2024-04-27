@@ -2688,6 +2688,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/addon-viewport@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@storybook/addon-viewport@npm:7.0.2"
+  dependencies:
+    "@storybook/client-logger": "npm:7.0.2"
+    "@storybook/components": "npm:7.0.2"
+    "@storybook/core-events": "npm:7.0.2"
+    "@storybook/global": "npm:^5.0.0"
+    "@storybook/manager-api": "npm:7.0.2"
+    "@storybook/preview-api": "npm:7.0.2"
+    "@storybook/theming": "npm:7.0.2"
+    memoizerific: "npm:^1.11.3"
+    prop-types: "npm:^15.7.2"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: c8b163a3a90935d12e4728c90d2f760ef90772976fe111d4750a580afdeae14a0963370dedcf50d8a0cabf823e4efa2362bef085d6e688eee6b94bdfa2d524aa
+  languageName: node
+  linkType: hard
+
 "@storybook/addon-viewport@npm:8.0.9":
   version: 8.0.9
   resolution: "@storybook/addon-viewport@npm:8.0.9"
@@ -9782,6 +9807,7 @@ __metadata:
     "@storybook/addon-essentials": "npm:^8.0.9"
     "@storybook/addon-interactions": "npm:^8.0.9"
     "@storybook/addon-links": "npm:^8.0.9"
+    "@storybook/addon-viewport": "npm:7.0.2"
     "@storybook/blocks": "npm:^8.0.9"
     "@storybook/testing-library": "npm:^0.0.14-next.2"
     "@storybook/vue3": "npm:^8.0.9"

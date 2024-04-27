@@ -6,7 +6,7 @@ const props = defineProps({
   isLoggedIn: {
     type: Boolean,
     required: true
-  }
+  },
 })
 </script>
 

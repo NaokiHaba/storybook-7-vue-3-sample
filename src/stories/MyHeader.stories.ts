@@ -13,6 +13,9 @@ const meta: Meta<typeof MyHeader> = {
         },
         template: '<MyHeader v-bind="args" />'
     }),
+    args: {
+        isLoggedIn: false,
+    },
     argTypes: {
         onLogin: {action: "login"},
         onLogout: {action: "logout"},
