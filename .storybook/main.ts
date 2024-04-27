@@ -9,7 +9,6 @@ const config: StorybookConfig = {
     docs: {
         autodocs: "tag",
     },
-    addons: ["@storybook/addon-controls"],
-
+    addons: ["@storybook/addon-controls", "@storybook/addon-actions"]
 };
 export default config;
