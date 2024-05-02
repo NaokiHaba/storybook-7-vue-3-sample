@@ -15,10 +15,13 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "7.0.2",
+    "@storybook/addon-backgrounds": "7.0.2",
     "@storybook/addon-controls": "7.0.2",
     "@storybook/addon-essentials": "^8.0.9",
     "@storybook/addon-interactions": "^8.0.9",
     "@storybook/addon-links": "^8.0.9",
+    "@storybook/addon-measure": "7.0.2",
+    "@storybook/addon-outline": "7.0.2",
     "@storybook/addon-viewport": "7.0.2",
     "@storybook/blocks": "^8.0.9",
     "@storybook/testing-library": "^0.0.14-next.2",
