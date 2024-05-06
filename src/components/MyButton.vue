@@ -1,5 +1,8 @@
 <script setup lang="ts">
 const props = defineProps({
+  /**
+   * ボタンに表示するテキスト
+   */
   label: {
     type: String,
     required: true
@@ -7,16 +10,16 @@ const props = defineProps({
   variant: {
     type: String,
     default: 'primary',
-    validator: (value: string) => [ 'primary', 'secondary' ].includes(value)
+    validator: (value: string) => ['primary', 'secondary'].includes(value)
   },
   size: {
     type: String,
     default: 'medium',
-    validator: (value: string) => [ 'small', 'medium', 'large' ].includes(value)
+    validator: (value: string) => ['small', 'medium', 'large'].includes(value)
   }
 })
 
-const emits = defineEmits([ 'click' ])
+const emits = defineEmits(['click'])
 
 </script>
 

@@ -19,6 +19,7 @@ const meta: Meta<typeof MyButton> = {
         },
         template: '<MyButton v-bind="args" />'
     }),
+    tags: ["autodocs"],
     // args: propsを定義し、Storybookの画面上で動的に変更できるようにする機能
     args: {
         label: "ボタン",
