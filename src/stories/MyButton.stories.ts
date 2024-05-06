@@ -43,9 +43,35 @@ const meta: Meta<typeof MyButton> = {
         }
 
     },
-
+    parameters: {
+        // custom backgrounds
+        backgrounds: {
+            default: "twitter",
+            values: [
+                {
+                    name: "twitter",
+                    value: "#00aced",
+                },
+                {
+                    name: "facebook",
+                    value: "#3b5998",
+                },
+            ],
+        },
+    }
 }
 
-export const Default: Story = {};
+export const Default: Story = {
+    args: {
+        label: "ボタン",
+        variant: "primary",
+        size: "medium"
+    },
+    parameters: {
+        backgrounds: {
+            default: "twitter",
+        },
+    }
+};
 
 export default meta

@@ -12,7 +12,6 @@ const meta: Meta<typeof MyPage> = {
     }),
     // Add the viewport addon to the story
     parameters: {
-
         viewport: {
             // default viewports
             // viewports: INITIAL_VIEWPORTS
@@ -34,7 +33,8 @@ const meta: Meta<typeof MyPage> = {
                     },
                 },
             },
-        }
+        },
+
     }
 }
 
